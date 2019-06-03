@@ -7,11 +7,11 @@ import one_plot
 This module creates a figure, then adds individual plots by calling one_plot.py.
 """
 
-def generate():
+def generate(dev_accs):
     fig = plt.figure()
     cur_ax = fig.add_subplot(1,1,1)
 
-    one_plot.scatter_sorted_vals(cur_ax)
+    one_plot.scatter_sorted_vals(cur_ax, dev_accs)
 
     plt.savefig('plot_drafts/sorted_scatter.pdf')
 

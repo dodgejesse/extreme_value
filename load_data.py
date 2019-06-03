@@ -14,7 +14,7 @@ def main():
     dev_accs = df[cur_indices]['best_validation_accuracy'].tolist()
 
 
-    many_plots.generate()
+    many_plots.generate(dev_accs)
     
     import pdb; pdb.set_trace()
 
